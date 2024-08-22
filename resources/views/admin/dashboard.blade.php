@@ -10,7 +10,7 @@
                     <div class="card text-white bg-primary mb-3">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Total Documents</h5>
+                                <h5 class="card-title">Documents Totals</h5>
                                 <i class="bi bi-file-earmark-text" style="font-size: 2rem;"></i>
                             </div>
                             <p class="card-text display-4">{{ $totalDocuments }}</p>
@@ -21,7 +21,7 @@
                     <div class="card text-white bg-danger mb-3">
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Total Users</h5>
+                                <h5 class="card-title">Utilisateurs Totals</h5>
                                 <i class="bi bi-people-fill" style="font-size: 2rem;"></i>
                             </div>
                             <p class="card-text display-4">{{ $totalUsers }}</p>
@@ -32,7 +32,7 @@
                     <div class="card text-white bg-warning mb-3" >
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
-                                <h5 class="card-title">Total Classifications</h5>
+                                <h5 class="card-title">Repertoires Total</h5>
                                 <i class="bi bi-layers-fill" style="font-size: 2rem;"></i>
                             </div>
                             <p class="card-text display-4">{{ $totalClassifications }}</p>

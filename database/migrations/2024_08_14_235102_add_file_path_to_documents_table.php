@@ -12,8 +12,11 @@ class AddFilePathToDocumentsTable extends Migration
     public function up(): void
     {
         Schema::table('documents', function (Blueprint $table) {
-            $table->string('file_path')->nullable()->after('content'); // Ajout de la colonne file_path
+            if (!Schema::hasColumn('documents', 'file_path')) {
+                $table->string('file_path')->nullable()->after('content');
+            }
         });
+        
     }
 
     /**

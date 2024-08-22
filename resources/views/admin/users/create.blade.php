@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="container">
-    <h1>Create User</h1>
+    <h1>Creer un Utilisateur</h1>
 
     {{-- Affichage des erreurs de validation --}}
     @if ($errors->any())
@@ -19,7 +19,7 @@
     <form action="{{ route('users.store') }}" method="POST">
         @csrf
         <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name">Nom</label>
             <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" required>
         </div>
         
@@ -29,7 +29,7 @@
         </div>
         
         <div class="form-group mt-3">
-            <label for="password">Password</label>
+            <label for="password">Mot de passe </label>
             <input type="password" class="form-control" id="password" name="password" required>
         </div>
         
@@ -53,7 +53,7 @@
             </div>
         @endif
         
-        <button type="submit" class="btn btn-primary mt-3">Create User</button>
+        <button type="submit" class="btn btn-primary mt-3">Creer un Utilisateur</button>
     </form>
 </div>
 @endsection

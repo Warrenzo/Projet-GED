@@ -74,12 +74,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('users.index') ? 'active' : '' }}" href="{{ route('users.index') }}">
-                        <i class="bi bi-people-fill"></i> Users
+                        <i class="bi bi-people-fill"></i> Utilisateurs
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('classifications.index') ? 'active' : '' }}" href="{{ route('classifications.index') }}">
-                        <i class="bi bi-layers-fill"></i> Classifications
+                        <i class="bi bi-layers-fill"></i> Repertoires
                     </a>
                 </li>
             </ul>
@@ -90,7 +90,7 @@
                         @csrf
                     </form>
                     <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        <i class="bi bi-box-arrow-right"></i> Logout
+                        <i class="bi bi-box-arrow-right"></i> Se deconnecter
                     </a>
                 </li>
             </ul>
